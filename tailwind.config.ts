@@ -17,8 +17,9 @@ export default {
 				],
 			},
 			colors: {
-				iara: "#C9A29B",
-				tomaz: "#A17168",
+				gold: "#C7AF99",
+				iara: "#BE9794",
+				tomaz: "#B36A6B",
 			},
 		},
 	},

@@ -15,7 +15,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
 	return (
 		<div className="w-full h-screen grid place-content-center bg-iara">
-			<div className="p-8 rounded-2xl mx-auto flex flex-col justify-center items-center gap-4 border-4">
+			<div className="p-8 rounded-2xl mx-auto flex flex-col justify-center items-center gap-4 border-4 border-white">
 				<div className="rounded-full overflow-hidden size-48 -mt-32 border-4 border-white">
 					<img src="./iara.jpg" alt="" />
 				</div>
