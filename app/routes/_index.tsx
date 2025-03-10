@@ -61,7 +61,7 @@ export default function Index() {
 						</span>
 					</Link>
 				</div>
-				<img src="./logo.svg" alt="" className="h-24 mt-12" />
+				<img src="./logo.svg" alt="" className="h-16 mt-12" />
 				{/* Social */}
 
 				{/* Copyrights */}
