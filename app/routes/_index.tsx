@@ -3,7 +3,7 @@ import { MetaFunction } from "@vercel/remix";
 
 export const meta: MetaFunction = () => {
 	return [
-		{ title: "Dra. Iara Tomaz - Gonecologista e Obstetra" },
+		{ title: "Dra. Iara Tomaz - Ginecologista e Obstetra" },
 		{
 			name: "description",
 			content:
