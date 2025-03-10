@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply antialiased;
+}
+
+.link {
+	@apply bg-tomaz/50 flex py-5 px-6 text-white rounded-xl tracking-tighter items-center hover:bg-tomaz   active:bg-white active:text-iara transition w-full justify-between text-2xl gap-16;
+}
