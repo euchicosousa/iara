@@ -36,7 +36,7 @@ export default function Index() {
 					</Link>
 					<Link
 						to={encodeURI(
-							"https://wa.me/5588981563429?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz."
+							"https://wa.me/5588997925279?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz."
 						)}
 						target="_blank"
 						rel="noreferrer"
@@ -49,7 +49,7 @@ export default function Index() {
 					</Link>
 					<Link
 						to={encodeURI(
-							"https://wa.me/5588981563429?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz."
+							"https://wa.me/5588996555900?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz."
 						)}
 						target="_blank"
 						rel="noreferrer"
