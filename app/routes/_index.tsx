@@ -13,6 +13,29 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const links = [
+    {
+      title: "Vila Clinic",
+      url: "https://wa.me/5588981563429?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz.",
+      location: "Sobral",
+    },
+    {
+      title: "SmartMed",
+      url: "https://wa.me/5588992499339?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz.",
+      location: "Massapê",
+    },
+    {
+      title: "Otoneuro",
+      url: "https://wa.me/5588988040202?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz.",
+      location: "Itapipoca",
+    },
+    {
+      title: "Clínica Vita",
+      url: "https://wa.me/5588992763022?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz.",
+      location: "Camocim",
+    },
+  ];
+
   return (
     <div className="w-full h-screen grid place-content-center bg-iara">
       <div className="p-8 rounded-2xl mx-auto flex flex-col justify-center items-center gap-4 border-4 border-white">
@@ -21,39 +44,22 @@ export default function Index() {
         </div>
         {/* link */}
         <div className="flex flex-col mt-8 gap-2 mx-auto w-full">
-          <Link
-            to={encodeURI(
-              "https://wa.me/5588981563429?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz."
-            )}
-            target="_blank"
-            rel="noreferrer"
-            className="link"
-          >
-            <span>Vila Clinic </span>
-            <span className="uppercase text-sm tracking-wider">Sobral</span>
-          </Link>
-          <Link
-            to={encodeURI(
-              "https://wa.me/5588992499339?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz."
-            )}
-            target="_blank"
-            rel="noreferrer"
-            className="link"
-          >
-            <span>SmartMed </span>
-            <span className="uppercase text-sm tracking-wider">Massapê</span>
-          </Link>
-          <Link
-            to={encodeURI(
-              "https://wa.me/5588996555900?text=Olá, gostaria de agendar uma consulta com a Dra. Iara Tomaz."
-            )}
-            target="_blank"
-            rel="noreferrer"
-            className="link"
-          >
-            <span>Laboclisa</span>
-            <span className="uppercase text-sm tracking-wider">Santana</span>
-          </Link>
+          {links.map((link, i) => {
+            return (
+              <Link
+                key={i}
+                to={encodeURI(link.url)}
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
+                <span>{link.title}</span>
+                <span className="uppercase text-sm tracking-wider">
+                  {link.location}
+                </span>
+              </Link>
+            );
+          })}
         </div>
         <img src="./logo.svg" alt="" className="h-16 mt-12" />
         {/* Social */}
